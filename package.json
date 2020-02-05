@@ -8,6 +8,7 @@
     "test": "jest",
     "eslint": "eslint ./",
     "start": "node ./dist/index.js",
+    "init-admin": "nodemon --exec babel-node ./tools/init.js",
     "dev": "nodemon --exec babel-node ./index.js",
     "tes-db": "nodemon --exec babel-node ./tools/db.js",
     "prod": "yarn clean && cross-env NODE_ENV=production yarn build && yarn start",
