@@ -40,11 +40,17 @@ const typeDefs = gql`
     token: String!
   }
 
+  type Data {
+    remark: String
+  }
+
   type Admin {
     id: ID!
     name: String
     key: String
+    data: Data
     created_at: TimeStamp
+    updated_at: TimeStamp
   }
 
   input addAdminInput {

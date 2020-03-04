@@ -3,7 +3,6 @@ import uuid from '../tools/uuid'
 
 const getAdmins = async () => {
   const res = await db.select('admin')
-  console.log('res', res)
   return res
 }
 const addAdmin = async (name, key) => {
